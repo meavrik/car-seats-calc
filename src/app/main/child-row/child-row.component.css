@@ -1,0 +1,13 @@
+
+.container {
+
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 1em;
+    color: black;
+    max-width: 500px;
+}
+

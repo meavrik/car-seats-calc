@@ -1,0 +1,10 @@
+<div class="container">
+    <app-child-row *ngFor="let item of children;let i=index" [data]="item" (add)="onAddNewChild()" [lastOne]="(children.length-1)==item.id"></app-child-row>
+    <button class="submit" style="width:90%;font-size: 1em">חשב</button>
+
+    <div style="padding:2em;">
+        <img src="assets/Car.png" alt="">
+    </div>
+</div>
+
+

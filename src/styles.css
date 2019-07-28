@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: rgb(32, 5, 59)
+}
+
+* {
+    margin: 0;
+}
+
+p {
+    /* color: white; */
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 300ms all;
+    
+}
+
+button:hover {
+    filter: brightness(1.10);
+    /* border-bottom:none !important; */
+}
+
+button:active {
+    border-bottom:none !important;
+}
+
+button.action {
+    background-color: rgb(28, 204, 28);
+    border-bottom: 3px solid rgb(14, 134, 14);
+    
+}
+
+button.submit {
+    background-color: rgb(32, 111, 230);
+    border-bottom: 3px solid rgb(15, 77, 172);
+    color: white;
+}

@@ -1,0 +1,7 @@
+<div class="container">
+    <button class="action" *ngIf="lastOne" (click)="addClick()">הוסף ילד</button>
+
+    <param-input-slot title="שוקל\ת" [min]="2" [max]="50" type="ק''ג"></param-input-slot>
+    <param-input-slot title="בגובה" [min]="50" [max]="140" type="ס''מ"></param-input-slot>
+    <param-input-slot title="בן\בת" [min]="1" [max]="14" ></param-input-slot>
+</div>
