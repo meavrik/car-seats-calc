@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ParamInputSlotComponent implements OnInit {
   @Input() min;
   @Input() max;
+  @Input() step=1;
   @Input() title;
   @Input() type="";
 

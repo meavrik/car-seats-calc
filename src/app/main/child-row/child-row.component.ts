@@ -8,14 +8,18 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ChildRowComponent implements OnInit {
   @Input() data;
-  @Input() lastOne:boolean;
-  @Output() add = new EventEmitter<any>();
+  @Input() showAddButn:boolean;
+  @Output() add = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit() {
   }
 
   addClick() {
-    this.add.emit();
+    this.add.emit(true);
+  }
+
+  removeClick() {
+    this.add.emit(false);
   }
 }

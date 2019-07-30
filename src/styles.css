@@ -19,7 +19,11 @@ button {
     padding: 5px 10px;
     cursor: pointer;
     transition: 300ms all;
-    
+    font-size: 1em;
+}
+
+button.delete {
+    background-color: rgb(206, 224, 224);
 }
 
 button:hover {
@@ -42,3 +46,4 @@ button.submit {
     border-bottom: 3px solid rgb(15, 77, 172);
     color: white;
 }
+
