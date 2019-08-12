@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    background-color: rgb(32, 5, 59)
+    /* background-color: rgb(32, 5, 59); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient( rgb(0, 0, 0),rgb(44, 12, 77));
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
 }
 
 * {
@@ -12,6 +18,9 @@ p {
     /* color: white; */
 }
 
+a {
+    color: white;
+}
 button {
     outline: none;
     border: none;
@@ -20,6 +29,7 @@ button {
     cursor: pointer;
     transition: 300ms all;
     font-size: 1em;
+    font-weight: bold;
 }
 
 button.delete {
