@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'param-input-slot',
@@ -8,17 +8,21 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ParamInputSlotComponent implements OnInit {
   @Input() min;
   @Input() max;
-  @Input() step=1;
+  @Input() step = 1;
   @Input() title;
-  @Input() type="";
+  @Input() type = "";
 
-  value
+  @Input() @Output() value;
 
   constructor() { }
 
   ngOnInit() {
 
-    this.value = Math.floor((this.max+this.min)/2);
+    // this.value = Math.floor((this.max+this.min)/2);
+  }
+
+  onChange(e) {
+    //this.value = e.currentTarget.valueAsNumber;
   }
 
 }

@@ -1,10 +1,16 @@
 <div class="container">
     <h1 class="title">מחשבון כסאות בטיחות</h1>
-    <app-child-row *ngFor="let item of children;let i=index" [data]="item" (add)="onAddNewChild(item,$event)" [showAddButn]="children.length<4  && (children.length-1)==item.id"></app-child-row>
+    <app-child-row *ngFor="let item of children;let i=index" [(data)]="item" (add)="onAddNewChild(item,$event)" [showAddButn]="children.length<4  && (children.length-1)==item.id"></app-child-row>
     <button class="submit" style="width:98%;font-size: 1em">חשב</button>
 
-    <div style="padding:2em;">
-        <img src="assets/Car.png" alt="">
+    <div style="padding:2em;height: 160px;">
+        <div style="position: absolute">
+            <img src="assets/Car.png" alt="">
+        </div>
+        
+        <div style="position: absolute;transform:translateX(150px)" *ngFor="let item of children;let i=index" [style.transform]="getSeatPosition(i,item)">
+            <img style="position: absolute"  src="assets/safty1.png" alt="">
+        </div>
     </div>
 
     <a href="">המלץ לי על כסא מתאים</a>
